@@ -4,9 +4,18 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+/*
+@import url('https://fonts.googleapis.com/css?family=Sometype%20Mono:700|Sometype%20Mono:400');
+
+body {
+  font-family: 'Sometype Mono';
+  font-weight: 400;
+}
+*/
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+	--accent: hsl(335, 64, 42);
+	--accent-light: hsl(335, 64, 42);
+	--accent-dark: hsl(335, 64, 58);
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -16,21 +25,21 @@
 		0 16px 32px rgba(var(--gray), 33%);
 }
 @font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-regular.woff') format('woff');
+	font-family: 'SometypeMono';
+	src: url('/fonts/SometypeMono-Regular.ttf') format('ttf');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-bold.woff') format('woff');
+	font-family: 'SometypeMono';
+	src: url('/fonts/SometypeMono-Bold.ttf') format('ttf');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
 body {
-	font-family: 'Atkinson', sans-serif;
+	font-family: 'SometypeMono', monospace;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -38,7 +47,6 @@ body {
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
 }
